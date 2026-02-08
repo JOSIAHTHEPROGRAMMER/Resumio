@@ -108,6 +108,9 @@ Resumio/
 └── README.md
 ```
 
+## Related Projects
+
+- [Resumio Server](https://github.com/JOSIAHTHEPROGRAMMER/Resumio-server) - Backend API
 
 
 ## Contributing
