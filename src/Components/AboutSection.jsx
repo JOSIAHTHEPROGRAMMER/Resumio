@@ -54,12 +54,12 @@ const AboutSection = () => {
               </svg>
             </Link>
 
-            <a
-              href="#features"
+            <Link
+              to="/"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-slate-700 font-semibold border border-slate-300 hover:bg-white hover:border-slate-400 transition-all active:scale-95"
             >
               Explore Features
-            </a>
+            </Link>
           </div>
 
           {/* Stats */}
@@ -131,10 +131,11 @@ const AboutSection = () => {
                 </p>
               </div>
             </div>
-
-            <button className="mt-6 w-full py-3 rounded-full font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 transition active:scale-95">
-              Generate Resume
-            </button>
+            <Link to="/">
+              <button className="mt-6 w-full py-3 rounded-full font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 transition active:scale-95">
+                Generate Resume
+              </button>
+            </Link>
           </div>
 
           {/* floating badge */}

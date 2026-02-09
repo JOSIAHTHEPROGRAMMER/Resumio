@@ -201,10 +201,10 @@ const Dashboard = () => {
               {allResumes.map((resume, index) => {
                 const baseColor = colors[index % colors.length];
                 return (
-                  <button
+                  <div
                     key={index}
                     onClick={() => navigate(`/app/builder/${resume._id}`)}
-                    className="group relative bg-white rounded-2xl border-2 border-slate-200 p-6 hover:shadow-xl transition-all duration-300 overflow-hidden"
+                    className="group relative bg-white rounded-2xl border-2 border-slate-200 p-6 hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer"
                     style={{ borderColor: baseColor + "40" }}
                   >
                     {/* Gradient Background */}
@@ -267,7 +267,7 @@ const Dashboard = () => {
                         <TrashIcon className="size-4 text-slate-700 hover:text-red-600" />
                       </button>
                     </div>
-                  </button>
+                  </div>
                 );
               })}
             </div>
